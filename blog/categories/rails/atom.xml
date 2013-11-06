@@ -4,7 +4,7 @@
   <title><![CDATA[Category: rails | My Octopress Blog]]></title>
   <link href="http://kumabotz.github.io/octori/blog/categories/rails/atom.xml" rel="self"/>
   <link href="http://kumabotz.github.io/octori/"/>
-  <updated>2013-11-06T11:36:20+08:00</updated>
+  <updated>2013-11-06T12:02:52+08:00</updated>
   <id>http://kumabotz.github.io/octori/</id>
   <author>
     <name><![CDATA[Tery Lim]]></name>
@@ -12,6 +12,45 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[class and instance methods]]></title>
+    <link href="http://kumabotz.github.io/octori/blog/2013/11/06/class-and-instance-methods/"/>
+    <updated>2013-11-06T12:00:00+08:00</updated>
+    <id>http://kumabotz.github.io/octori/blog/2013/11/06/class-and-instance-methods</id>
+    <content type="html"><![CDATA[<p>Class methods are methods that are called on a class and instance methods are
+methods that are called on an instance of a class.</p>
+
+<p>``` ruby
+class Foo
+  def self.bar</p>
+
+<pre><code>puts 'class method'
+</code></pre>
+
+<p>  end</p>
+
+<p>  def baz</p>
+
+<pre><code>puts 'instance method'
+</code></pre>
+
+<p>  end
+end</p>
+
+<p>Foo.bar # => &ldquo;class method&rdquo;
+Foo.baz # => NoMethodError: undefined method ‘baz’ for Foo:Class</p>
+
+<p>Foo.new.baz # => instance method
+Foo.new.bar # => NoMethodError: undefined method ‘bar’ for #&lt;Foo:0x1e820>
+```</p>
+
+<!-- more -->
+
+
+<p><a href="http://www.railstips.org/blog/archives/2009/05/11/class-and-instance-methods-in-ruby/">http://www.railstips.org/blog/archives/2009/05/11/class-and-instance-methods-in-ruby/</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[compact]]></title>

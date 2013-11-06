@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>My Octopress Blog</title>
+  <title>class and instance methods - My Octopress Blog</title>
   <meta name="author" content="Tery Lim">
 
   
@@ -28,7 +28,7 @@ methods that are called on an instance of a class. 1
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://kumabotz.github.io/octori">
+  <link rel="canonical" href="http://kumabotz.github.io/octori/blog/2013/11/06/class-and-instance-methods">
   <link href="/octori/favicon.png" rel="icon">
   <link href="/octori/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/octori/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
@@ -85,15 +85,12 @@ methods that are called on an instance of a class. 1
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/octori/blog/2013/11/06/class-and-instance-methods/">Class and Instance Methods</a></h1>
+      <h1 class="entry-title">Class and Instance Methods</h1>
     
     
       <p class="meta">
@@ -116,7 +113,7 @@ methods that are called on an instance of a class. 1
   </header>
 
 
-  <div class="entry-content"><p>Class methods are methods that are called on a class and instance methods are
+<div class="entry-content"><p>Class methods are methods that are called on a class and instance methods are
 methods that are called on an instance of a class.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -152,27 +149,21 @@ methods that are called on an instance of a class.</p>
 </span></code></pre></td></tr></table></div></figure>
 
 
+<!-- more -->
+
+
+<p><a href="http://www.railstips.org/blog/archives/2009/05/11/class-and-instance-methods-in-ruby/">http://www.railstips.org/blog/archives/2009/05/11/class-and-instance-methods-in-ruby/</a></p>
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/octori/blog/2013/11/06/class-and-instance-methods/">Read on &rarr;</a>
-    </footer>
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/octori/blog/2013/11/06/compact/">Compact</a></h1>
-    
-    
-      <p class="meta">
-        
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Tery Lim</span></span>
+
+      
 
 
 
@@ -184,40 +175,42 @@ methods that are called on an instance of a class.</p>
   
 
 
-<time datetime="2013-11-06T11:32:00+08:00" pubdate data-updated="true">Nov 6<span>th</span>, 2013</time>
-        
-      </p>
+<time datetime="2013-11-06T12:00:00+08:00" pubdate data-updated="true">Nov 6<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/octori/blog/categories/rails/'>rails</a>, <a class='category' href='/octori/blog/categories/ruby/'>ruby</a>
+  
+</span>
+
+
+    </p>
     
-  </header>
+      <div class="sharing">
+  
+  <a href="/octori//twitter.com/share" class="twitter-share-button" data-url="http://kumabotz.github.io/octori/blog/2013/11/06/class-and-instance-methods/" data-via="kumabotz" data-counturl="http://kumabotz.github.io/octori/blog/2013/11/06/class-and-instance-methods/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
 
-
-  <div class="entry-content"><p>A useful method if you need to remove nil values from an array is <a href="http://ruby-doc.org/core-2.0.0/Array.html#method-i-compact">compact</a>:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">arr</span> <span class="o">=</span> <span class="o">[</span><span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kp">nil</span><span class="p">,</span> <span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="s1">&#39;baz&#39;</span><span class="p">,</span> <span class="kp">nil</span><span class="o">]</span>
-</span><span class='line'><span class="n">arr</span><span class="o">.</span><span class="n">compact</span>  <span class="c1">#=&gt; [&#39;foo&#39;, 0, &#39;bar&#39;, 7, &#39;baz&#39;]</span>
-</span><span class='line'><span class="n">arr</span>          <span class="c1">#=&gt; [&#39;foo&#39;, 0, nil, &#39;bar&#39;, 7, &#39;baz&#39;, nil]</span>
-</span><span class='line'><span class="n">arr</span><span class="o">.</span><span class="n">compact!</span> <span class="c1">#=&gt; [&#39;foo&#39;, 0, &#39;bar&#39;, 7, &#39;baz&#39;]</span>
-</span><span class='line'><span class="n">arr</span>          <span class="c1">#=&gt; [&#39;foo&#39;, 0, &#39;bar&#39;, 7, &#39;baz&#39;]</span>
-</span></code></pre></td></tr></table></div></figure>
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/octori/blog/2013/11/06/compact/" title="Previous Post: compact">&laquo; compact</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
 </div>
-  
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/octori/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -238,7 +231,7 @@ methods that are called on an instance of a class.</p>
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/kumabotz">@kumabotz</a> on GitHub
@@ -279,6 +272,7 @@ methods that are called on an instance of a class.</p>
 
   
 </aside>
+
 
     </div>
   </div>
