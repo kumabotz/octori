@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>My Octopress Blog</title>
+  <title>rspec specific test - My Octopress Blog</title>
   <meta name="author" content="Tery Lim">
 
   
@@ -19,7 +19,7 @@ rspec path/to/spec/file.rb:&lt;line number&gt; ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://kumabotz.github.io/octori">
+  <link rel="canonical" href="http://kumabotz.github.io/octori/blog/2013/11/06/rspec-specific-test">
   <link href="/octori/favicon.png" rel="icon">
   <link href="/octori/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/octori/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
@@ -76,15 +76,12 @@ rspec path/to/spec/file.rb:&lt;line number&gt; ">
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/octori/blog/2013/11/06/rspec-specific-test/">Rspec Specific Test</a></h1>
+      <h1 class="entry-title">Rspec Specific Test</h1>
     
     
       <p class="meta">
@@ -107,102 +104,21 @@ rspec path/to/spec/file.rb:&lt;line number&gt; ">
   </header>
 
 
-  <div class="entry-content"><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<div class="entry-content"><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='sh'><span class='line'>rspec path/to/spec/file.rb:&lt;line number&gt;
 </span></code></pre></td></tr></table></div></figure>
 
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/octori/blog/2013/11/06/class-and-instance-methods/">Class and Instance Methods</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">Tery Lim</span></span>
 
-<time datetime="2013-11-06T12:00:00+08:00" pubdate data-updated="true">Nov 6<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Class methods are methods that are called on a class and instance methods are
-methods that are called on an instance of a class.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Foo</span>
-</span><span class='line'>  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">bar</span>
-</span><span class='line'>    <span class="nb">puts</span> <span class="s1">&#39;class method&#39;</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">baz</span>
-</span><span class='line'>    <span class="nb">puts</span> <span class="s1">&#39;instance method&#39;</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'><span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'><span class="no">Foo</span><span class="o">.</span><span class="n">bar</span> <span class="c1"># =&gt; &quot;class method&quot;</span>
-</span><span class='line'><span class="no">Foo</span><span class="o">.</span><span class="n">baz</span> <span class="c1"># =&gt; NoMethodError: undefined method ‘baz’ for Foo:Class</span>
-</span><span class='line'>
-</span><span class='line'><span class="no">Foo</span><span class="o">.</span><span class="n">new</span><span class="o">.</span><span class="n">baz</span> <span class="c1"># =&gt; instance method</span>
-</span><span class='line'><span class="no">Foo</span><span class="o">.</span><span class="n">new</span><span class="o">.</span><span class="n">bar</span> <span class="c1"># =&gt; NoMethodError: undefined method ‘bar’ for #&lt;Foo:0x1e820&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/octori/blog/2013/11/06/class-and-instance-methods/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/octori/blog/2013/11/06/compact/">Compact</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -214,40 +130,42 @@ methods that are called on an instance of a class.</p>
   
 
 
-<time datetime="2013-11-06T11:32:00+08:00" pubdate data-updated="true">Nov 6<span>th</span>, 2013</time>
-        
-      </p>
+<time datetime="2013-11-06T12:16:00+08:00" pubdate data-updated="true">Nov 6<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/octori/blog/categories/rails/'>rails</a>, <a class='category' href='/octori/blog/categories/ruby/'>ruby</a>
+  
+</span>
+
+
+    </p>
     
-  </header>
+      <div class="sharing">
+  
+  <a href="/octori//twitter.com/share" class="twitter-share-button" data-url="http://kumabotz.github.io/octori/blog/2013/11/06/rspec-specific-test/" data-via="kumabotz" data-counturl="http://kumabotz.github.io/octori/blog/2013/11/06/rspec-specific-test/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
 
-
-  <div class="entry-content"><p>A useful method if you need to remove nil values from an array is <a href="http://ruby-doc.org/core-2.0.0/Array.html#method-i-compact">compact</a>:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">arr</span> <span class="o">=</span> <span class="o">[</span><span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kp">nil</span><span class="p">,</span> <span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="s1">&#39;baz&#39;</span><span class="p">,</span> <span class="kp">nil</span><span class="o">]</span>
-</span><span class='line'><span class="n">arr</span><span class="o">.</span><span class="n">compact</span>  <span class="c1">#=&gt; [&#39;foo&#39;, 0, &#39;bar&#39;, 7, &#39;baz&#39;]</span>
-</span><span class='line'><span class="n">arr</span>          <span class="c1">#=&gt; [&#39;foo&#39;, 0, nil, &#39;bar&#39;, 7, &#39;baz&#39;, nil]</span>
-</span><span class='line'><span class="n">arr</span><span class="o">.</span><span class="n">compact!</span> <span class="c1">#=&gt; [&#39;foo&#39;, 0, &#39;bar&#39;, 7, &#39;baz&#39;]</span>
-</span><span class='line'><span class="n">arr</span>          <span class="c1">#=&gt; [&#39;foo&#39;, 0, &#39;bar&#39;, 7, &#39;baz&#39;]</span>
-</span></code></pre></td></tr></table></div></figure>
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/octori/blog/2013/11/06/class-and-instance-methods/" title="Previous Post: class and instance methods">&laquo; class and instance methods</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
 </div>
-  
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/octori/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -272,7 +190,7 @@ methods that are called on an instance of a class.</p>
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/kumabotz">@kumabotz</a> on GitHub
@@ -313,6 +231,7 @@ methods that are called on an instance of a class.</p>
 
   
 </aside>
+
 
     </div>
   </div>
