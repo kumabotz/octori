@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: rails | My Octopress Blog]]></title>
+  <link href="http://kumabotz.github.io/octori/blog/categories/rails/atom.xml" rel="self"/>
+  <link href="http://kumabotz.github.io/octori/"/>
+  <updated>2013-11-06T11:36:20+08:00</updated>
+  <id>http://kumabotz.github.io/octori/</id>
+  <author>
+    <name><![CDATA[Tery Lim]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[compact]]></title>
+    <link href="http://kumabotz.github.io/octori/blog/2013/11/06/compact/"/>
+    <updated>2013-11-06T11:32:00+08:00</updated>
+    <id>http://kumabotz.github.io/octori/blog/2013/11/06/compact</id>
+    <content type="html"><![CDATA[<p>A useful method if you need to remove nil values from an array is <a href="http://ruby-doc.org/core-2.0.0/Array.html#method-i-compact">compact</a>:</p>
+
+<p><code>ruby
+arr = ['foo', 0, nil, 'bar', 7, 'baz', nil]
+arr.compact  #=&gt; ['foo', 0, 'bar', 7, 'baz']
+arr          #=&gt; ['foo', 0, nil, 'bar', 7, 'baz', nil]
+arr.compact! #=&gt; ['foo', 0, 'bar', 7, 'baz']
+arr          #=&gt; ['foo', 0, 'bar', 7, 'baz']
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>
