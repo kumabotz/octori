@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://kumabotz.github.io/octori/atom.xml" rel="self"/>
   <link href="http://kumabotz.github.io/octori/"/>
-  <updated>2013-11-14T15:47:22+08:00</updated>
+  <updated>2013-11-14T15:49:13+08:00</updated>
   <id>http://kumabotz.github.io/octori/</id>
   <author>
     <name><![CDATA[Tery Lim]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[chrome developer shortcuts]]></title>
+    <link href="http://kumabotz.github.io/octori/blog/2013/11/14/chrome-developer-shortcuts/"/>
+    <updated>2013-11-14T15:48:00+08:00</updated>
+    <id>http://kumabotz.github.io/octori/blog/2013/11/14/chrome-developer-shortcuts</id>
+    <content type="html"><![CDATA[<p><a href="https://developers.google.com/chrome-developer-tools/docs/shortcuts">https://developers.google.com/chrome-developer-tools/docs/shortcuts</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[git show branch upstream]]></title>
